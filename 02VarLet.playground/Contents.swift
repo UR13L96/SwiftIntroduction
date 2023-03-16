@@ -9,3 +9,5 @@ var welcomeMessage: String
 var red, green, blue: Double
 
 welcomeMessage = "Que Pachuca por Toluca"
+
+print("The current attempt is: \(currentLoginAttempt) of an available total of: \(maxLoginAttempts)")
