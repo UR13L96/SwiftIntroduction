@@ -46,3 +46,6 @@ let decimalNumber = 0.1416
 let numberPi = Double(three) + 0.1416
 
 let integerPi = Int(3.1416)
+
+typealias AudioSample = UInt16
+var currentAudioSample: AudioSample = .max
