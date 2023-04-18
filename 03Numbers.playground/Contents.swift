@@ -32,3 +32,17 @@ let someNumber = 00000097.540
 
 let oneMillion = 1_000_000
 let justMoreThanAMillion = 1_000_000.000_000_1
+
+// Data type errors
+// let cannotBeNegative: UInt8 = -13
+// let tooBig: UInt8 = UInt8 + 1
+
+let a: UInt16 = 2_000
+let b: UInt8 = 1
+let c = a + UInt16(b)
+ 
+let three = 3
+let decimalNumber = 0.1416
+let numberPi = Double(three) + 0.1416
+
+let integerPi = Int(3.1416)
