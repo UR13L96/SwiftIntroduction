@@ -16,3 +16,24 @@ var age = 31
 if age >= 18 {
     print("You can join to the party")
 }
+
+
+// MARK: Tuple
+let http404Error = (404, "Not Found")
+print("Status code: \(http404Error.0)")
+print("Message: \(http404Error.1)")
+
+let (statusCode, statusMessage) = http404Error
+print("Status code: \(statusCode)")
+print("Message: \(statusMessage)")
+
+let (justStatusCode, _) = http404Error
+print("Status code: \(justStatusCode)")
+
+let http200Status = (code: 200, message: "OK")
+print("Status code: \(http200Status.code)")
+print("Message: \(http200Status.message)")
+
+
+let me = (name: "Uriel", lastName: "Olascoaga", age: 26)
+print("Hello, my name is \(me.name) \(me.lastName), and I'm \(me.age) years old")
