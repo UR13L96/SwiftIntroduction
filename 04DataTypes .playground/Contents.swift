@@ -37,3 +37,13 @@ print("Message: \(http200Status.message)")
 
 let me = (name: "Uriel", lastName: "Olascoaga", age: 26)
 print("Hello, my name is \(me.name) \(me.lastName), and I'm \(me.age) years old")
+
+let possibleAge = "26"
+let convertedAge = Int(possibleAge) // Int?
+
+var serverResponseCode: Int? = 404
+serverResponseCode = nil
+
+var surveyAnswer: String?
+surveyAnswer = "42"
+print(surveyAnswer)
