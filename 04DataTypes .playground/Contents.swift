@@ -46,10 +46,23 @@ serverResponseCode = nil
 
 var surveyAnswer: String?
 surveyAnswer = "42"
-print(surveyAnswer!)
 
 if convertedAge != nil {
     print("User's age isn't nil: \(convertedAge!)")
 } else {
     print("User's age is nil")
+}
+
+if let surveyAnswer = surveyAnswer {
+    // surveyAnswer isn't nil
+    print("surveyAnswer string is: \(surveyAnswer)")
+} else {
+    // surveyAnswer is nil
+    print("surveyAnswer string is nil")
+}
+
+if let firstNumber = Int("4"),
+   let secondNumber = Int("pepe"),
+   firstNumber < secondNumber && secondNumber < 100 {
+    print("\(firstNumber) < \(secondNumber) < 100")
 }
