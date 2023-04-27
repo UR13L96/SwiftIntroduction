@@ -65,3 +65,14 @@ do {
         waitUntilBeHungry()
     }
 }
+
+// assert() & precondition()
+
+let age = -5
+assert(age >= 0, "Age can not be negative")
+
+if age > 10 {
+    print("You can ride the roller coaster")
+} else if age >= 0 {
+    print("You are too young to ride the roller coaster")
+}
