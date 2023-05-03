@@ -50,3 +50,19 @@ if name == "Uriel" {
 (3, "Nadia") < (3, "Uriel")
 (4, "perro") == (4, "perro")
 ("perro", false) == ("perro", false)
+
+let contentHeight = 40
+var hasImage = true
+var rowHeight = 0
+
+/*
+if hasImage {
+    rowHeight = contentHeight + 50
+} else {
+    rowHeight = contentHeight + 10
+}
+*/
+
+rowHeight = contentHeight + (hasImage ? 50 : 10)
+
+
