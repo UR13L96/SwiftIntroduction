@@ -23,3 +23,30 @@ number += 3
 number -= 2
 number *= 4
 number /= 8
+
+1 == 1
+1 == 2
+
+1 != 2
+
+2 > 1
+2 < 1
+
+2 >= 1
+1 >= 1
+
+2 <= 1
+
+let name = "Nadia"
+
+if name == "Uriel" {
+    print("Welcome to the jungle \(name), you gonna die")
+} else {
+    print("You aren't allowed here")
+}
+
+(1, "Uriel") < (2, "Nadia")
+(3, "Uriel") < (3, "Nadia")
+(3, "Nadia") < (3, "Uriel")
+(4, "perro") == (4, "perro")
+("perro", false) == ("perro", false)
