@@ -79,3 +79,34 @@ var userColor: UIColor?
 userColor = .green
 
 var colorToBeUsed = userColor ?? defaultColor
+
+for i in 1 ... 5 {
+    print(i)
+}
+
+for i in 1 ..< 5 {
+    print(i)
+}
+
+let names = [
+    "Uriel",
+    "Nadia",
+    "Luis"
+]
+
+for i in 0 ..< names.count {
+    print(names[i])
+}
+
+for name in names[1...] {
+    print(name)
+}
+
+for name in names[...2] {
+    print(name)
+}
+
+let range = ...5
+range.contains(7)
+range.contains(4)
+range.contains(-1)
