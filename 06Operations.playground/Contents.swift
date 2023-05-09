@@ -65,4 +65,17 @@ if hasImage {
 
 rowHeight = contentHeight + (hasImage ? 50 : 10)
 
+let defaultAge = 18
+var userAge: Int?
 
+userAge = 26
+
+var ageToBeUsed = userAge ?? defaultAge
+//  ageToBeUsed = (userAge != nil ? userAge! : defaultAge)
+
+let defaultColor: UIColor = .red
+var userColor: UIColor?
+
+userColor = .green
+
+var colorToBeUsed = userColor ?? defaultColor
