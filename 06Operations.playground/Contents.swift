@@ -110,3 +110,33 @@ let range = ...5
 range.contains(7)
 range.contains(4)
 range.contains(-1)
+
+let allowEntry = false
+
+if !allowEntry {
+    print("Access denied")
+}
+
+let enterDoorCode = true
+let passRetinaScan = true
+
+if enterDoorCode && passRetinaScan {
+    print("Welcome to the jungle baby!!!")
+} else {
+    print("Access denied")
+}
+
+let hasMoney = false
+let hasInvitation = false
+
+if hasMoney || hasInvitation {
+    print("Welcome to the jungle baby!!!")
+} else {
+    print("Access denied")
+}
+
+if enterDoorCode && passRetinaScan || hasMoney || hasInvitation {
+    print("Welcome to the jungle baby!!!")
+} else {
+    print("Access denied")
+}
