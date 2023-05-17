@@ -60,3 +60,22 @@ for i in 1...10 {
     let result = i * number
     print("\(i) x \(number) = \(result)")
 }
+
+let greeting = "Hello! How are you?"
+greeting[greeting.startIndex]
+// greeting[greeting.endIndex]
+greeting[greeting.index(before: greeting.endIndex)]
+greeting[greeting.index(after: greeting.startIndex)]
+
+for i in greeting.indices {
+    print(greeting[i], terminator: " - ")
+}
+
+var welcome = "Hello"
+welcome.insert("!", at: welcome.endIndex)
+welcome.insert(contentsOf: " how are you", at: welcome.index(before: welcome.endIndex))
+
+welcome.remove(at: welcome.index(before: welcome.endIndex))
+
+let range = welcome.index(welcome.endIndex, offsetBy: -7) ..< welcome.endIndex
+welcome.removeSubrange(range)
