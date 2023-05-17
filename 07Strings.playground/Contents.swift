@@ -61,7 +61,7 @@ for i in 1...10 {
     print("\(i) x \(number) = \(result)")
 }
 
-let greeting = "Hello! How are you?"
+let greeting = "Hello, How are you?"
 greeting[greeting.startIndex]
 // greeting[greeting.endIndex]
 greeting[greeting.index(before: greeting.endIndex)]
@@ -79,3 +79,8 @@ welcome.remove(at: welcome.index(before: welcome.endIndex))
 
 let range = welcome.index(welcome.endIndex, offsetBy: -7) ..< welcome.endIndex
 welcome.removeSubrange(range)
+
+greeting
+let index = greeting.firstIndex(of: ",") ?? greeting.endIndex
+let firstPart = greeting[..<index]
+let newString = String(firstPart)
