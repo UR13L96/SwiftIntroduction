@@ -37,3 +37,26 @@ b = "C"
 print("a: \(a), b: \(b)")
 a = "D"
 print("a: \(a), b: \(b)")
+
+let name = "Uriel Olascoaga"
+for char in name {
+    print(char)
+}
+print(name.count)
+
+let exclamationMark: Character = "!"
+let nameChars: [Character] = ["U", "r", "i", "e", "l"]
+var nameString = String(nameChars)
+let compoundName = "Uriel " + "Olascoaga"
+
+nameString.append(exclamationMark)
+
+let multiplier = 3
+var message = "Multiplier product for \(multiplier) x 3.5 = \(Double(multiplier) * 3.5)"
+message.append(exclamationMark)
+
+for i in 1...10 {
+    let number = 7
+    let result = i * number
+    print("\(i) x \(number) = \(result)")
+}
