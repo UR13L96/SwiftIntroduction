@@ -70,6 +70,7 @@ greeting[greeting.index(after: greeting.startIndex)]
 for i in greeting.indices {
     print(greeting[i], terminator: " - ")
 }
+print("")
 
 var welcome = "Hello"
 welcome.insert("!", at: welcome.endIndex)
@@ -110,3 +111,19 @@ for scene in collection {
     }
 }
 print("The number of scenes in Act 1 is: \(act1SceneCount)")
+
+let ghost = "¡¡Ghost!! 👻"
+
+for codeUnit in ghost.utf8 {
+    print(codeUnit, terminator: " ")
+}
+print("")
+
+for codeUnit in ghost.utf16 {
+    print(codeUnit, terminator: " ")
+}
+print("")
+
+for codeUnit in ghost.unicodeScalars {
+    print(codeUnit, terminator: " ")
+}
