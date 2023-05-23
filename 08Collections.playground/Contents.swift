@@ -28,7 +28,7 @@ shoppingList.count
 if shoppingList.isEmpty {
     print("The shopping list is empty")
 } else {
-    print("You will need to do de shopping")
+    print("You will need to do the shopping")
 }
 
 shoppingList.append("Coca-Cola")
@@ -49,3 +49,7 @@ shoppingList
 
 let _ = shoppingList.removeLast()
 shoppingList
+
+for (i, item) in shoppingList.enumerated() {
+    print("\(i + 1): \(item)")
+}
