@@ -53,3 +53,36 @@ shoppingList
 for (i, item) in shoppingList.enumerated() {
     print("\(i + 1): \(item)")
 }
+
+// MARK: Set
+var letters = Set<Character>()
+letters.count
+letters.insert("u")
+letters.insert("r")
+letters.insert("i")
+letters
+
+var topGames: Set<String> = [
+    "Fortnite",
+    "FIFA",
+    "Hitman"
+]
+topGames.count
+
+if topGames.isEmpty {
+    "There's no ranked games"
+}
+
+topGames.insert("RDR2")
+
+if let removedGame = topGames.remove("FIFA") {
+    print("Item deleted: \(removedGame)")
+}
+
+if topGames.contains("Hitman") {
+    print("I love this game")
+}
+
+for game in topGames.sorted() {
+    print(game)
+}
