@@ -86,3 +86,29 @@ if topGames.contains("Hitman") {
 for game in topGames.sorted() {
     print(game)
 }
+
+let oddNumbers: Set = [1, 3, 5, 7, 9]
+let evenNumbers: Set = [0, 2, 4, 6, 8]
+let primeNumbers: Set = [2, 3, 5, 7]
+
+// A union B
+oddNumbers.union(evenNumbers).sorted()
+
+// A intersection B
+oddNumbers.intersection(evenNumbers)
+evenNumbers.intersection(primeNumbers).sorted()
+oddNumbers.intersection(primeNumbers).sorted()
+
+// A substracting B
+oddNumbers.subtracting(primeNumbers).sorted()
+
+// A symmetricDifference B
+oddNumbers.symmetricDifference(primeNumbers).sorted()
+
+let houseAnimals: Set = ["Dog", "Cat"]
+let farmAnimals: Set = ["Cow", "Horse", "Pig", "Dog", "Cat"]
+let cityAnimals: Set = ["Rat", "Dove"]
+
+houseAnimals.isSubset(of: farmAnimals)
+farmAnimals.isSuperset(of: houseAnimals)
+farmAnimals.isDisjoint(with: cityAnimals)
