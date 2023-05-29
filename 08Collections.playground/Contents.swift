@@ -112,3 +112,35 @@ let cityAnimals: Set = ["Rat", "Dove"]
 houseAnimals.isSubset(of: farmAnimals)
 farmAnimals.isSuperset(of: houseAnimals)
 farmAnimals.isDisjoint(with: cityAnimals)
+
+// MARK: Dictionary
+var namesOfIntegers = [Int: String]()
+namesOfIntegers[15] = "Fiveteen"
+namesOfIntegers = [:]
+
+var airports: [String: String] = [
+    "YYZ": "Toronto",
+    "DUB": "Dublin",
+    "PMI": "Palma de Mallorca"
+]
+airports.count
+airports.isEmpty
+airports["LHR"] = "London City Airport"
+airports
+airports["LHR"] = "London Heatrow"
+airports
+
+if let oldValue = airports.updateValue("Dublin Airport", forKey: "DUB") {
+    print("The airport has the name of: \(oldValue)")
+}
+airports
+
+if let airportName = airports["DUB"] {
+    print("The airport for DUB is: \(airportName)")
+}
+
+airports["PMI"] = nil
+airports
+if let removeAirport = airports.removeValue(forKey: "DUB") {
+    print("Removed airport")
+}
