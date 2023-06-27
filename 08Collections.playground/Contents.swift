@@ -144,3 +144,15 @@ airports
 if let removeAirport = airports.removeValue(forKey: "DUB") {
     print("Removed airport")
 }
+
+for (key, value) in airports {
+    print("\(key): \(value)")
+}
+
+for key in airports.keys {
+    print(key)
+}
+
+for value in airports.values {
+    print(value)
+}
