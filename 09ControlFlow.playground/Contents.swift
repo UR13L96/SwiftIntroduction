@@ -57,3 +57,29 @@ repeat {
     i += 1
 } while i <= 10
 print(i)
+
+// MARK: Eratosthenes' sieve
+let a = 2
+let b = 100
+var sieve: [Int] = Array(a...b)
+
+var j = 0
+while j < sieve.count {
+    let value = sieve[j]
+    
+    if value * value >= b {
+        break
+    }
+    
+    var k = j + 1
+    while k < sieve.count {
+        if sieve[k] % value == 0 {
+            sieve.remove(at: k)
+        } else {
+            k += 1
+        }
+    }
+    
+    j += 1
+}
+sieve
