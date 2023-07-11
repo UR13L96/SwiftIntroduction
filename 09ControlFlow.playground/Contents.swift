@@ -1,5 +1,7 @@
 import UIKit
 
+// MARK: For in
+
 let names = ["Uriel", "Nadia", "Kurt"]
 
 for name in names {
@@ -35,3 +37,23 @@ let minuteInterval = 5
 for minute in stride(from: 0, to: minutes, by: minuteInterval) {
     print("\(hour):\(minute)")
 }
+
+// MARK: While
+
+var i = 0
+while i <= 10 {
+    i += 1
+}
+print(i)
+
+while i <= 10 {
+    i += 1
+}
+print(i)
+
+// MARK: Repeat while
+
+repeat {
+    i += 1
+} while i <= 10
+print(i)
