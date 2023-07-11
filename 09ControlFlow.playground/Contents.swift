@@ -59,6 +59,7 @@ repeat {
 print(i)
 
 // MARK: Eratosthenes' sieve
+
 let a = 2
 let b = 100
 var sieve: [Int] = Array(a...b)
@@ -83,3 +84,15 @@ while j < sieve.count {
     j += 1
 }
 sieve
+
+// MARK: If - else
+
+var temp = 16
+
+if temp <= 15 {
+    print("It's cold! Turn on the heating")
+} else if temp >= 25{
+    print("It's getting hot! Turn off the air conditioning")
+} else {
+    print("Que agusticidad!")
+}
