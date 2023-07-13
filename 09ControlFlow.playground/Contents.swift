@@ -96,3 +96,35 @@ if temp <= 15 {
 } else {
     print("Que agusticidad!")
 }
+
+// MARK: Switch
+
+let someChar: Character = "A"
+switch someChar {
+case "a", "A":
+    print("Is the first letter of the alphabet")
+case "z", "Z":
+    print("Is the last letter of the alphabet")
+default:
+    print("Is another letter")
+}
+
+let moons = 7890
+let phrase = "moons on Saturn"
+let naturalCount: String
+
+switch moons {
+case 0:
+    naturalCount = "There's no "
+case 1..<5:
+    naturalCount = "There are a few "
+case 5..<12:
+    naturalCount = "There are a quite few "
+case 12..<100:
+    naturalCount = "There are dozens of "
+case 100..<1000:
+    naturalCount = "There are hundred of "
+default:
+    naturalCount = "There are countless of "
+}
+print("\(naturalCount)\(phrase)")
