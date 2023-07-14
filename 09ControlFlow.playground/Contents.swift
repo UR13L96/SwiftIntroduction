@@ -128,3 +128,53 @@ default:
     naturalCount = "There are countless of "
 }
 print("\(naturalCount)\(phrase)")
+
+
+let somePoint = (1, 0)
+
+switch somePoint {
+case (0, 0):
+    print("The point \(somePoint) is the origin of the coordinates")
+case (_, 0):
+    print("The point \(somePoint) is located in the X-axis")
+case (0, _):
+    print("The point \(somePoint) is located in the Y-axis")
+default:
+    print("The point \(somePoint) is somewhere else")
+}
+
+let anotherPoint = (2, -2)
+
+switch anotherPoint {
+case (let x, 0):
+    print("The point \(somePoint) is located in the X-axis, with value \(x)")
+case (0, let y):
+    print("The point \(somePoint) is located in the Y-axis, with value \(y)")
+case (let x, let y) where x == y:
+    print("The point \(somePoint) lies on the line x = y")
+case (let x, let y) where x == -y:
+    print("The point \(somePoint) lies on the line x = -y")
+case (let x, let y):
+    print("The point \(somePoint) is somewhere else, with value \(x), \(y)")
+}
+
+
+let anotherCharacter: Character = "u"
+
+switch anotherCharacter {
+case "a", "e", "i", "o", "u":
+    print("Is a vowel")
+case "b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "ñ", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z":
+    print("Is a consonant")
+default:
+    print("Is another character")
+}
+
+
+let stillAnotherPoint = (9, 0)
+switch stillAnotherPoint {
+case (let distance, 0), (0, let distance):
+    print("The distance to the origin is \(distance)")
+default:
+    print("The point is not on the axes")
+}
