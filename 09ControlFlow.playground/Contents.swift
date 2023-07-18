@@ -176,5 +176,37 @@ switch stillAnotherPoint {
 case (let distance, 0), (0, let distance):
     print("The distance to the origin is \(distance)")
 default:
-    print("The point is not on the axes")
+    break
 }
+
+// MARK: Continue & break
+
+let sentence = "Great minds think alike"
+var filteredSentence = ""
+let charactersToRemove: [Character] = ["a", "e", "i", "o", "u"]
+
+for char in sentence {
+    if charactersToRemove.contains(char) {
+        continue
+    }
+    filteredSentence.append(char)
+    
+    if char == "d" {
+        break
+    }
+}
+filteredSentence
+
+// MARK: Fallthrough
+
+let integerToDescribe = 5
+var description = "The number \(integerToDescribe) is"
+
+switch integerToDescribe {
+case 2, 3, 5, 7, 11, 13, 17, 19:
+    description += " a prime number, and"
+    fallthrough
+default:
+    description += " an integer."
+}
+print(description)
