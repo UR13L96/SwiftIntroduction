@@ -231,3 +231,9 @@ func testUserValidation() {
     }
     print(surname)
 }
+
+if #available(iOS 12, macOS 10.12, *) {
+    // Do something for iOS 12+ or macOS 10.12+
+} else {
+    // Do somthing for oldest versions
+}
