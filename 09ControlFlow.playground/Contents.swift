@@ -210,3 +210,24 @@ default:
     description += " an integer."
 }
 print(description)
+
+// MARK: Guard let
+
+var people: [String: Any] = [
+    "name": "Uriel",
+    "age": 26,
+    "isMale": true
+]
+testUserValidation()
+
+func testUserValidation() {
+    guard let age = people["age"] else {
+        return
+    }
+    print(age)
+    
+    guard let surname = people["surname"] else {
+        return
+    }
+    print(surname)
+}
