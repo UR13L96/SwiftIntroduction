@@ -30,3 +30,6 @@ print(name3)
 
 name = "María"
 print(name)
+
+let name4 = "Felipe"
+print(name4)
