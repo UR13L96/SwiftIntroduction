@@ -20,3 +20,13 @@ print("The current attempt is: \(currentLoginAttempt) of an available total of: 
  Here I can write a lot of information
 */
 
+var name = "Jorge"
+print(name)
+var name2 = "Carlos"
+print(name2)
+var name3: String?
+name3 = "Javier"
+print(name3)
+
+name = "María"
+print(name)
