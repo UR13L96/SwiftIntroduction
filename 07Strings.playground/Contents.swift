@@ -3,8 +3,8 @@ import UIKit
 let string = "This a string"
 
 let multilineString = """
-Hi, I'm Uriel\
- We are studying Swift's course
+Hi, I'm Uriel 🧑🏻‍💻
+We are studying Swift's course
 Greetings
 """
 
