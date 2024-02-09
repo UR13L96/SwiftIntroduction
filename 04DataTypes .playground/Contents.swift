@@ -78,3 +78,25 @@ if let assummedString = assummedString {
 }
 
 print(assummedString)
+
+var number: Int?
+print(number)
+number = 13
+print(number)
+print(number!)
+print(number ?? "There's no value")
+
+if let number = number {
+    print(number)
+} else {
+    print("There's no value")
+}
+
+func printNumber(number: Int?) {
+    guard let number = number else {
+        print("There's no value")
+        return
+    }
+    print(number)
+}
+printNumber(number: number)
